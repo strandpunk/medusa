@@ -8,7 +8,7 @@ function App() {
   return (
     <Canvas camera={{
       fov: 64,
-      position: [0, -3, 0],
+      position: [0, -3, 1],
     }}>
       <Experience />
     </Canvas>

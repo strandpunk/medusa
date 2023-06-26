@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { useLayoutEffect, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 
-export const FLOOR_HEIGHT = 2;
+export const FLOOR_HEIGHT = 1;
 export const NB_FLOORS = 2;
 
 export function Lp(props) {
@@ -48,7 +48,7 @@ export function Lp(props) {
   return (
     <group {...props} dispose={null} ref={ref}>
       <PerspectiveCamera makeDefault={false} far={100000} near={10} fov={39.598} position={[0, 0, 0]} rotation={[0, 0, 0]} scale={10} />
-      <group position={[0, 0, 0]} rotation={[0, 0, 0]} scale={0.5}>
+      <group position={[0, 0, 0.5]} rotation={[0, 0, 0]} scale={0.5}>
         <mesh geometry={nodes.Sphere002.geometry} material={materials['Material.009']} />
         <mesh geometry={nodes.Sphere002_1.geometry} material={materials['Material.008']} />
         <mesh geometry={nodes.Sphere002_2.geometry} material={materials['Material.010']} />

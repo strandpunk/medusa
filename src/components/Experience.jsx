@@ -1,5 +1,5 @@
 import { OrbitControls, ScrollControls } from "@react-three/drei"
-import { Dog } from "./Dog"
+import { Lp } from "./Lp"
 
 export const Experience = () => {
     return (
@@ -7,7 +7,7 @@ export const Experience = () => {
             <ambientLight intensity={1} />
             <OrbitControls enableZoom={false} />
             <ScrollControls pages={3} damping={0.25}>
-            <Dog />
+            <Lp />
             </ScrollControls>
         </>
     )

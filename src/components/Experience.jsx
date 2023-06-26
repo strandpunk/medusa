@@ -5,8 +5,9 @@ export const Experience = () => {
     return (
         <>
             <ambientLight intensity={1} />
-            <OrbitControls enableZoom={false}/>
-            <ScrollControls pages={3} damping={0.25}><Dog />
+            <OrbitControls enableZoom={false} />
+            <ScrollControls pages={3} damping={0.25}>
+            <Dog />
             </ScrollControls>
         </>
     )

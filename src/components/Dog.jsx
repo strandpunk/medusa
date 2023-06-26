@@ -10,7 +10,7 @@ export function Dog(props) {
   const { nodes, materials } = useGLTF('./models/opti.gltf')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.lowPoly.geometry} material={materials['gun dog opti']} position={[0, -20, -20]} rotation={[-1.57, -0.001, 1.929]} scale={0.1} />
+      <mesh geometry={nodes.lowPoly.geometry} material={materials['gun dog opti']} position={[0, 0, 0]} rotation={[-1.57, -0.001, 1.929]} scale={0.1} />
     </group>
   )
 }

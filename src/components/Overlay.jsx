@@ -4,7 +4,7 @@ import { Scroll } from "@react-three/drei"
 const Section = (props) => {
     return (
 
-            <div>
+            <div style={{color: 'red'}}>
                 {props.children}
             </div>
 

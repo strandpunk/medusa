@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { useLayoutEffect, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 
-export const FLOOR_HEIGHT = 1;
+export const FLOOR_HEIGHT = 2;
 export const NB_FLOORS = 2;
 
 export function Lp(props) {

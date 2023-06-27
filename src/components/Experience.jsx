@@ -1,15 +1,15 @@
 import { Box, OrbitControls, ScrollControls } from "@react-three/drei"
-import { Lp } from "./Lp"
+import { Earth } from "./Earth"
 import { Overlay } from "./Overlay"
 
 export const Experience = () => {
     return (
         <>
             <ambientLight intensity={0.5} />
-            <OrbitControls enableZoom={false} enableRotate={false} />
+            <OrbitControls enableZoom={true} enableRotate={true} />
             <ScrollControls pages={3} damping={0.25}>
                 <Overlay />
-            <Lp />
+            <Earth />
             </ScrollControls>
         </>
     )

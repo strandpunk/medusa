@@ -11,7 +11,7 @@ import { useFrame } from '@react-three/fiber';
 export const FLOOR_HEIGHT = 2;
 export const NB_FLOORS = 2;
 
-export function Lp(props) {
+export function Earth(props) {
   const { nodes, materials } = useGLTF('./models/lp.glb')
   const ref = useRef();
   const tl = useRef();
@@ -24,23 +24,25 @@ export function Lp(props) {
     tl.current.seek(scroll.offset * tl.current.duration());
   });
 
-  useFrame (() => {
-
-    // ref.current.rotation.y += 0.01;
-    // ref.current.rotation.z += 0.01;
-    // ref.current.rotation.x += 0.01;
-
-  });
 
   useLayoutEffect (() => {
     tl.current = gsap.timeline();
+
+    //ROTATION
+    tl.current.from(
+      ref.current.rotation,
+      {
+        duration: 2,
+        y: -2,
+      },
+      0
+    )
 
     //VERTICAL ANIMATION
     tl.current.to(
       ref.current.position,
       {
-        duration: 2,
-        z: -FLOOR_HEIGHT * (NB_FLOORS - 1),
+        duration: 0.5,
         x: -FLOOR_HEIGHT * (NB_FLOORS - 1),
 
       },
@@ -52,8 +54,7 @@ export function Lp(props) {
 
   return (
     <group {...props} dispose={null} ref={ref}>
-      <PerspectiveCamera makeDefault={false} far={100000} near={10} fov={64} position={[0, 0, 0]} rotation={[0, 0, 0]} scale={10} />
-      <group position={[1, 0, 1]} rotation={[0, 0, 0]} scale={0.5}>
+      <group rotation={[-1.569, -0.001, 2.269]} position={[0, 0, 0]} scale={1}>
         <mesh geometry={nodes.Sphere002.geometry} material={materials['Material.009']} />
         <mesh geometry={nodes.Sphere002_1.geometry} material={materials['Material.008']} />
         <mesh geometry={nodes.Sphere002_2.geometry} material={materials['Material.010']} />
@@ -64,3 +65,6 @@ export function Lp(props) {
 }
 
 useGLTF.preload('./models/lp.glb')
+
+
+

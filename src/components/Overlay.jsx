@@ -14,6 +14,12 @@ const Section = (props) => {
 export const Overlay = () => {
     return (
         <Scroll html>
+            <div className="header">
+                Earth
+            </div>
+            <div className="earth-wrapper">
+
+            </div>
             <Section>
                 Top
             </Section>

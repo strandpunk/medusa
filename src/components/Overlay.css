@@ -1,13 +1,27 @@
 .cards-wrapper {
     background-color: azure;
 
-    width: 400px;
-    height: 200px;
+    width: 550px;
+    height: 500px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 25px;
     font-size: 2em;
 
-    margin: 10px;
+    margin: 30px;
     padding: 10px;
 
+    opacity: .5;
+
+}
+
+.header {
+    font-size: 4em;
+    color: whitesmoke;
+    text-align: center;
+    background-color: black;
+    width: 100vw;
+}
+
+.earth-wrapper {
+    height: 100vh;
 }

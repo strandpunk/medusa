@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { useLayoutEffect, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 
-export const FLOOR_HEIGHT = 2;
+export const FLOOR_HEIGHT = 3;
 export const NB_FLOORS = 2;
 
 export function Earth(props) {
@@ -33,7 +33,7 @@ export function Earth(props) {
       ref.current.rotation,
       {
         duration: 2,
-        y: -2,
+        y: -3,
       },
       0
     )
@@ -44,9 +44,10 @@ export function Earth(props) {
       {
         duration: 0.5,
         x: -FLOOR_HEIGHT * (NB_FLOORS - 1),
+        y: -FLOOR_HEIGHT * (NB_FLOORS - 1) / 3,
 
       },
-      0
+      0.5
     ); 
 
   }, []);

@@ -1,9 +1,11 @@
-import { Scroll } from "@react-three/drei"
+import { Scroll, useScroll } from "@react-three/drei"
+import { useFrame } from "@react-three/fiber";
+import { useState } from "react";
 import "./Overlay.css"
 
 const Section = (props) => {
     return (
-    <section>
+    <section style={{opacity: props.opacity}}>
         <div className="cards-wrapper">
             {props.children}
         </div>
@@ -11,7 +13,21 @@ const Section = (props) => {
     );
 };
 
+
+
 export const Overlay = () => {
+
+    const scroll = useScroll();
+    const [opacityFirstSection, setOpacityFirstSection] = useState(1);
+    const [opacitySecondSection, setOpacitySecondSection] = useState(1);
+    const [opacityThirdSection, setOpacityThirdSection] = useState(1);
+
+    useFrame (() => {
+        setOpacityFirstSection(scroll.curve(1 / 4, 2 / 4));
+        setOpacitySecondSection(scroll.curve(2 / 4, 2 / 4));
+        setOpacityThirdSection(scroll.curve(3 / 4, 2 / 4));
+    });
+
     return (
         <Scroll html>
             <div className="header">
@@ -20,13 +36,13 @@ export const Overlay = () => {
             <div className="earth-wrapper">
 
             </div>
-            <Section>
+            <Section opacity={opacityFirstSection}>
                 Top
             </Section>
-            <Section>
+            <Section opacity={opacitySecondSection}>
                 Mid
             </Section>
-            <Section>
+            <Section opacity={opacityThirdSection}>
                 Bot
             </Section>
         </Scroll>

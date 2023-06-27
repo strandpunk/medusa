@@ -42,7 +42,7 @@ export function Earth(props) {
     tl.current.to(
       ref.current.position,
       {
-        duration: 0.5,
+        duration: 2.5,
         x: -FLOOR_HEIGHT * (NB_FLOORS - 1),
         y: -FLOOR_HEIGHT * (NB_FLOORS - 1) / 3,
 

@@ -1,13 +1,13 @@
 import { Scroll } from "@react-three/drei"
-
+import "./Overlay.css"
 
 const Section = (props) => {
     return (
-
-            <div style={{color: 'red'}}>
-                {props.children}
-            </div>
-
+    <section>
+        <div className="cards-wrapper">
+            {props.children}
+        </div>
+    </section>
     );
 };
 
@@ -15,13 +15,13 @@ export const Overlay = () => {
     return (
         <Scroll html>
             <Section>
-                <h1>Hello World F1</h1>
+                Top
             </Section>
             <Section>
-                <h1>Hello World F2</h1>
+                Mid
             </Section>
             <Section>
-                <h1>Hello World F3</h1>
+                Bot
             </Section>
         </Scroll>
     )

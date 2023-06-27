@@ -7,10 +7,12 @@
     border-radius: 25px;
     font-size: 2em;
 
-    margin: 30px;
+    margin: 20px;
     padding: 10px;
 
     opacity: 1;
+
+    text-align: center;
 
 }
 
@@ -20,8 +22,28 @@
     text-align: center;
     background-color: black;
     width: 100vw;
+    height: 80px;
 }
+
+.footer {
+    font-size: 4em;
+    color: whitesmoke;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 0;
+    height: 80px;
+
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+ }
 
 .earth-wrapper {
     height: 100vh;
+}
+
+#test {
+    background-color: red;
+    height: 700px;
 }

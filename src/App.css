@@ -1,6 +1,6 @@
 #root {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #d9afd9;
   background-image: linear-gradient(0deg, #613161 0%, #175860 100%);
 

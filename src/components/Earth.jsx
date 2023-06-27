@@ -32,7 +32,7 @@ export function Earth(props) {
     tl.current.from(
       ref.current.rotation,
       {
-        duration: 2,
+        duration: 4,
         y: -3,
       },
       0

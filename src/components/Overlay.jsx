@@ -5,11 +5,11 @@ import "./Overlay.css"
 
 const Section = (props) => {
     return (
-    <section style={{opacity: props.opacity}}>
-        <div className="cards-wrapper">
-            {props.children}
-        </div>
-    </section>
+        <section style={{ opacity: props.opacity }}>
+            <div className="cards-wrapper">
+                {props.children}
+            </div>
+        </section>
     );
 };
 
@@ -22,16 +22,16 @@ export const Overlay = () => {
     const [opacitySecondSection, setOpacitySecondSection] = useState(1);
     const [opacityThirdSection, setOpacityThirdSection] = useState(1);
 
-    useFrame (() => {
-        setOpacityFirstSection(scroll.curve(1 / 4, 2 / 4));
-        setOpacitySecondSection(scroll.curve(2 / 4, 2 / 4));
-        setOpacityThirdSection(scroll.curve(3 / 4, 2 / 4));
+    useFrame(() => {
+        setOpacityFirstSection(scroll.curve(1 / 4, 1.5 / 4));
+        setOpacitySecondSection(scroll.curve(2 / 4, 1.5 / 4));
+        setOpacityThirdSection(scroll.curve(3 / 4, 1.5 / 4));
     });
 
     return (
         <Scroll html>
             <div className="header">
-                Earth
+                Header
             </div>
             <div className="earth-wrapper">
 
@@ -45,6 +45,9 @@ export const Overlay = () => {
             <Section opacity={opacityThirdSection}>
                 Bot
             </Section>
+            <div className="footer">
+                Footer
+            </div>
         </Scroll>
     )
 }

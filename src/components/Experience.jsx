@@ -1,4 +1,4 @@
-import { OrbitControls, ScrollControls } from "@react-three/drei"
+import { Box, OrbitControls, ScrollControls } from "@react-three/drei"
 import { Lp } from "./Lp"
 import { Overlay } from "./Overlay"
 

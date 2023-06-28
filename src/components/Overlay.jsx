@@ -31,7 +31,7 @@ export const Overlay = () => {
     return (
         <Scroll html>
             <div className="header">
-                Header
+                Почему Луна одинока?
             </div>
             <div className="earth-wrapper">
 

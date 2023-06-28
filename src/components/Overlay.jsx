@@ -23,16 +23,17 @@ export const Overlay = () => {
     const [opacityThirdSection, setOpacityThirdSection] = useState(1);
 
     useFrame(() => {
-        setOpacityFirstSection(scroll.curve(1 / 4, 1.8 / 4));
-        setOpacitySecondSection(scroll.curve(2 / 4, 1.8 / 4));
-        setOpacityThirdSection(scroll.curve(3 / 4, 1.8 / 4));
+        setOpacityFirstSection(scroll.curve(1 / 3, 1 / 3));
+        setOpacitySecondSection(scroll.curve(2 / 3, 1 / 3));
+        setOpacityThirdSection(scroll.range(2 / 3, 1 / 3));
     });
 
     return (
         <Scroll html>
             <div className="header">
-                Почему Луна одинока?
+                MOON
             </div>
+
             <div className="earth-wrapper">
 
             </div>
@@ -45,9 +46,9 @@ export const Overlay = () => {
             <Section opacity={opacityThirdSection}>
                 Bot
             </Section>
-            <div className="footer">
+            {/* <div className="footer">
                 Footer
-            </div>
+            </div> */}
         </Scroll>
     )
 }

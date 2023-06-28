@@ -23,8 +23,8 @@ export const Overlay = () => {
     const [opacityThirdSection, setOpacityThirdSection] = useState(1);
 
     useFrame(() => {
-        setOpacityFirstSection(scroll.curve(1 / 3, 1 / 3));
-        setOpacitySecondSection(scroll.curve(2 / 3, 1 / 3));
+        setOpacityFirstSection(scroll.curve(0 / 3, 2 / 3));
+        setOpacitySecondSection(scroll.curve(1 / 3, 2 / 3));
         setOpacityThirdSection(scroll.range(2 / 3, 1 / 3));
     });
 

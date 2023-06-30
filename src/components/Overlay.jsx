@@ -3,37 +3,15 @@ import { useFrame } from "@react-three/fiber";
 import { useState } from "react";
 import "./Overlay.css"
 
-// const Section = (props) => {
-//     return (
-//         <section style={{ opacity: props.opacity, position: props.position}}>
-//             <div className="cards-wrapper">
-//                 {props.children}
-//             </div>
-//         </section>
-//     );
-// };
-
 const Section = (props) => {
     return (
-      <section
-        className={`h-screen flex flex-col justify-center p-10 ${
-          props.right ? "items-end" : "items-start"
-        }`}
-        style={{
-          opacity: props.opacity,
-        }}
-      >
-        <div className="w-1/2 flex items-center justify-center">
-          <div className="max-w-sm w-full">
-            <div className="bg-white  rounded-lg px-8 py-12">
-              {props.children}
+        <section style={{ opacity: props.opacity }}>
+            <div className="cards-wrapper">
+                {props.children}
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     );
-  };
-
+};
 
 
 
@@ -59,7 +37,7 @@ export const Overlay = () => {
             <div className="moon-wrapper">
 
             </div>
-            <Section className='ppp' opacity={opacityFirstSection}>
+            <Section opacity={opacityFirstSection}>
                 <h2>Светлая сторона</h2>
                 <p>Из-за того, что период вращения вокруг Земли и период вращения вокруг своей оси у Луны совпадают,
                     с Земли можно наблюдать только одно полушарие Луны. Причина этой синхронизации — действие приливных

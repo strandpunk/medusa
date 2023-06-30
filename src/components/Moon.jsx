@@ -45,9 +45,9 @@ export function Moon(props) {
       ref.current.position,
       {
         duration: 2,
-        x: -2,
-        y: -1,
-        z: 0,
+        x: -1,
+        y: 0,
+        z: -1,
 
       },
       1.5

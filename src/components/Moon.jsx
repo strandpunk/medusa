@@ -27,17 +27,18 @@ export function Moon(props) {
   useLayoutEffect(() => {
     tl.current = gsap.timeline();
 
-    //ROTATION
+    // ROTATION
     tl.current.to(
       ref.current.rotation,
       {
-        duration: 4,
+        duration: 7,
         y: 5.5,
         ease: SlowMo.ease.config(0.2, 0.2, false),
 
       },
       0
     )
+
 
     //VERTICAL ANIMATION
     tl.current.to(
@@ -52,7 +53,34 @@ export function Moon(props) {
       0.5
     );
 
+        //VERTICAL ANIMATION
+        tl.current.to(
+          ref.current.position,
+          {
+            duration: 2,
+            x: 1,
+            y: 0.5,
+            z: 1,
+    
+          },
+          2.5
+        );
+
+               //VERTICAL ANIMATION
+               tl.current.to(
+                ref.current.position,
+                {
+                  duration: 2.5,
+                  x: -2,
+                  y: -1,
+                  z: 0,
+          
+                },
+                4.5
+              );
+
   }, []);
+
 
   return (
     <group {...props} dispose={null} ref={ref}>

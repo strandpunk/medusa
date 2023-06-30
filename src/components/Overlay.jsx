@@ -22,22 +22,22 @@ export const Overlay = () => {
     const [opacitySecondSection, setOpacitySecondSection] = useState(1);
     const [opacityThirdSection, setOpacityThirdSection] = useState(1);
 
-    useFrame(() => {
-        setOpacityFirstSection(scroll.curve(1 / 4, 1.5 / 4));
-        setOpacitySecondSection(scroll.curve(2 / 4, 2 / 4,));
-        setOpacityThirdSection(scroll.range(3 / 4, 1 / 4));
-    });
+    // useFrame(() => {
+    //     setOpacityFirstSection(scroll.curve(1 / 4, 1.5 / 4));
+    //     setOpacitySecondSection(scroll.curve(2 / 4, 2 / 4,));
+    //     setOpacityThirdSection(scroll.range(3 / 4, 1 / 4));
+    // });
 
     return (
         <Scroll html>
-            <div className="header">
+            {/* <div className="header">
                 ЛУНА
             </div>
 
             <div className="earth-wrapper">
 
-            </div>
-            <Section opacity={opacityFirstSection}>
+            </div> */}
+            {/* <Section opacity={opacityFirstSection}>
                 <h2>Светлая сторона</h2>
                 <p>Из-за того, что период вращения вокруг Земли и период вращения вокруг своей оси у Луны совпадают,
                     с Земли можно наблюдать только одно полушарие Луны. Причина этой синхронизации — действие приливных
@@ -54,7 +54,7 @@ export const Overlay = () => {
                 <p>Луна появилась около 4,5 млрд лет назад, немного позже Земли. Наиболее популярна гипотеза о том, что Луна сформировалась из осколков, 
                     оставшихся после «Гигантского столкновения» Земли и Тейи — планеты, схожей по размерам с Марсом.<br></br><br></br>
                     На сегодняшний день Луна является единственным внеземным астрономическим объектом, на котором побывал человек.</p>
-            </Section>
+            </Section> */}
             {/* <div className="footer">
                 Footer
             </div> */}

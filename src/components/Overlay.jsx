@@ -30,13 +30,15 @@ export const Overlay = () => {
 
     return (
         <Scroll html>
-            <div className="header">
-                MOON
-            </div>
+            <Section>
+                <div className="header">
+                    MOON
+                </div>
 
-            <div className="moon-wrapper">
+                <div className="moon-wrapper">
 
-            </div>
+                </div>
+            </Section>
             <Section opacity={opacityFirstSection}>
                 <div className="card">
                     <h2>Near side of the Moon</h2>
@@ -76,9 +78,12 @@ export const Overlay = () => {
                         geological understanding of the Moon's origins, internal structure, and subsequent history. The Moon is the only celestial body visited by humans.</p>
                 </div>
             </Section>
-            {/* <div className="footer">
-                Footer
-            </div> */}
+            <Section>
+                <div className="footer">
+                    2023 Anatoly Grankov
+                </div>
+            </Section>
+
         </Scroll>
     )
 }

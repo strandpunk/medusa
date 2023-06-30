@@ -1,19 +1,19 @@
 .cards-wrapper {
-    background-color: azure;
+    background-color: darkslategrey;
+    color: whitesmoke;
 
     width: 550px;
     height: 650px;
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 2em;
 
     margin-bottom: 50px;
     margin-left: 250px;
-    padding: 10px;
+    padding: 40px;
 
     opacity: 1;
 
-    text-align: center;
 
 }
 

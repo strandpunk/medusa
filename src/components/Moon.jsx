@@ -74,7 +74,7 @@ export function Moon(props) {
                   ease: SlowMo.ease.config(0.1, 0.1, false),
                   x: -2,
                   y: -1,
-                  z: 0,
+                  z: -1,
  
                 },
                 10

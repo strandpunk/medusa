@@ -40,7 +40,7 @@ export function Moon(props) {
     )
 
 
-    //VERTICAL ANIMATION
+    //VERTICAL ANIMATION 1
     tl.current.to(
       ref.current.position,
       {
@@ -53,27 +53,27 @@ export function Moon(props) {
       1.5
     );
 
-        //VERTICAL ANIMATION
+        //VERTICAL ANIMATION 2
         tl.current.to(
           ref.current.position,
           {
             duration: 4,
-            x: 1,
+            x: -1,
             y: 0.5,
-            z: 1,
+            z: -1,
     
           },
           5.5
         );
 
-               //VERTICAL ANIMATION
+               //VERTICAL ANIMATION 3
                tl.current.to(
                 ref.current.position,
                 {
                   duration: 4,
                   ease: SlowMo.ease.config(0.1, 0.1, false),
-                  x: -2,
-                  y: -1,
+                  x: -3,
+                  y: -2,
                   z: 0,
  
                 },

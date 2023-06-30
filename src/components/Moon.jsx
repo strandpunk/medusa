@@ -58,9 +58,9 @@ export function Moon(props) {
           ref.current.position,
           {
             duration: 4,
-            x: -1,
+            x: 1,
             y: 0.5,
-            z: -1,
+            z: 1,
     
           },
           5.5
@@ -72,8 +72,8 @@ export function Moon(props) {
                 {
                   duration: 4,
                   ease: SlowMo.ease.config(0.1, 0.1, false),
-                  x: -3,
-                  y: -2,
+                  x: -2,
+                  y: -1,
                   z: 0,
  
                 },

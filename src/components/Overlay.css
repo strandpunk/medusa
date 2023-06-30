@@ -17,6 +17,8 @@
 
 }
 
+#right {}
+
 .header {
     font-size: 4em;
     color: white;
@@ -40,8 +42,8 @@
 	justify-content: space-around;
  }
 
-.earth-wrapper {
-    height: 100vh;
+.moon-wrapper {
+    height: 70vh;
 }
 
 #test {

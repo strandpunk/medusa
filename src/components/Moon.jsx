@@ -59,7 +59,7 @@ export function Moon(props) {
           {
             duration: 4,
             x: 1,
-            y: 0.5,
+            y: 0,
             z: 1,
     
           },

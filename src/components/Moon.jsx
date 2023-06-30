@@ -33,7 +33,7 @@ export function Moon(props) {
       {
         duration: 14,
         y: 6.5,
-        ease: SlowMo.ease.config(0.2, 0.2, false),
+        ease: SlowMo.ease.config(0.9, 0.1, false),
 
       },
       0

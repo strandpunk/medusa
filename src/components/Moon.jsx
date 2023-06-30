@@ -4,9 +4,10 @@ Command: npx gltfjsx@6.2.4 public/models/Moon.glb
 */
 
 import { useGLTF, PerspectiveCamera, useScroll, Sphere } from '@react-three/drei'
-import gsap from "gsap";
+import gsap, {  } from "gsap";
 import { useLayoutEffect, useRef } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
+import { SlowMo } from 'gsap/src/all';
 
 
 export function Moon(props) {
@@ -31,8 +32,9 @@ export function Moon(props) {
       ref.current.rotation,
       {
         duration: 4,
-        y: 4,
- 
+        y: 5.5,
+        ease: SlowMo.ease.config(0.2, 0.2, false),
+
       },
       0
     )

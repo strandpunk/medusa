@@ -32,7 +32,7 @@ export function Moon(props) {
       ref.current.rotation,
       {
         duration: 14,
-        y: 5.5,
+        y: 6.5,
         ease: SlowMo.ease.config(0.2, 0.2, false),
 
       },

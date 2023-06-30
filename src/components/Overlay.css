@@ -1,4 +1,8 @@
 .cards-wrapper {
+    opacity: 1;
+}
+
+.card {
     background-color: darkslategrey;
     color: whitesmoke;
 
@@ -11,9 +15,11 @@
     margin-bottom: 50px;
     margin-left: 250px;
     padding: 40px;
+}
 
-    opacity: 1;
-
+#right {
+    margin-right: 250px;
+    margin-left: auto;
 
 }
 

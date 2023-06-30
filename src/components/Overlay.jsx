@@ -31,7 +31,7 @@ export const Overlay = () => {
     return (
         <Scroll html>
             <div className="header">
-                ЛУНА
+                MOON
             </div>
 
             <div className="moon-wrapper">
@@ -39,26 +39,41 @@ export const Overlay = () => {
             </div>
             <Section opacity={opacityFirstSection}>
                 <div className="card">
-                    <h2>Светлая сторона</h2>
-                    <p>Из-за того, что период вращения вокруг Земли и период вращения вокруг своей оси у Луны совпадают,
-                        с Земли можно наблюдать только одно полушарие Луны. Причина этой синхронизации — действие приливных
-                        сил от Земли на неоднородности распределения массы на Луне.</p>
+                    <h2>Near side of the Moon</h2>
+                    <p>The near side of the Moon is the lunar hemisphere that always faces towards Earth, opposite to the far side.
+                        Only one side of the Moon is visible from Earth because the Moon rotates on its axis at the same rate that the
+                        Moon orbits the Earth—a situation known as tidal locking. <br></br> <br></br>
+
+                        The Moon is directly illuminated by the Sun, and the cyclically varying viewing conditions cause the lunar phases.
+                        Sometimes the dark portion of the Moon is faintly visible due to earthshine, which is indirect sunlight
+                        reflected from the surface of Earth and onto the Moon. <br></br> <br></br>
+
+                        Since the Moon's orbit is both somewhat elliptical and inclined to its equatorial plane,
+                        libration allows up to 59% of the Moon's surface to be viewed from Earth (though only half at any moment from any point).</p>
                 </div>
             </Section>
             <Section opacity={opacitySecondSection}>
                 <div id="right" className="card">
-                    <h2>Обратная сторона</h2>
-                    <p>Впервые обратная сторона Луны была сфотографирована советской АМС «Луна-3» 7 октября 1959 года.
-                        Приём сигнала осуществляли в Симеизской обсерватории в Крыму. В массовой печати впервые изображение обратной стороны Луны,
-                        полученное АМС «Луна-3», появилось 27 октября 1959 года, оно было опубликовано в газете «Правда» и в других советских изданиях.</p>
+                    <h2>Far side of the Moon</h2>
+                    <p>The far side of the Moon is the lunar hemisphere that always faces away from Earth, opposite to the near side,
+                        because of synchronous rotation in the Moon's orbit. Compared to the near side, the far side's terrain is rugged,
+                        with a multitude of impact craters and relatively few flat and dark lunar maria ("seas"), giving it an appearance
+                        closer to other barren places in the Solar System such as Mercury and Callisto. It has one of the largest craters in the Solar System,
+                        the South Pole–Aitken basin. The hemisphere has sometimes been called the "dark side of the Moon", where "dark" means "unknown" instead of
+                        "lacking sunlight" – each side of the Moon experiences two weeks of sunlight while the opposite side experiences two weeks of night.</p>
                 </div>
             </Section>
             <Section opacity={opacityThirdSection}>
                 <div className="card">
-                    <h2>История</h2>
-                    <p>Луна появилась около 4,5 млрд лет назад, немного позже Земли. Наиболее популярна гипотеза о том, что Луна сформировалась из осколков,
-                        оставшихся после «Гигантского столкновения» Земли и Тейи — планеты, схожей по размерам с Марсом.<br></br><br></br>
-                        На сегодняшний день Луна является единственным внеземным астрономическим объектом, на котором побывал человек.</p>
+                    <h2>History</h2>
+                    <p>Both the Moon's prominence in Earth's sky and its regular cycle of phases have provided cultural references
+                        and influences for human societies throughout history. Such influences can be found in language, calendar systems,
+                        art, and mythology. <br></br> <br></br>
+                        The first artificial object to reach the Moon was the Soviet Union's uncrewed Luna 2 spacecraft
+                        in 1959; this was followed by the first successful soft landing by Luna 9 in 1966. <br></br> <br></br>
+                        The only human lunar missions to date have been those of the United States' Apollo program, which landed twelve men on the surface
+                        between 1969 and 1972. These and later uncrewed missions returned lunar rocks that have been used to develop a detailed
+                        geological understanding of the Moon's origins, internal structure, and subsequent history. The Moon is the only celestial body visited by humans.</p>
                 </div>
             </Section>
             {/* <div className="footer">

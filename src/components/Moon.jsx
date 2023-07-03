@@ -87,7 +87,7 @@ export function Moon(props) {
     <group {...props} dispose={null} ref={ref}>
       <group rotation={[0, 0, 0]} position={[0, 0, 0]} scale={.002}>
 
-        <mesh geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']} />
+        <mesh  onClick={(e) => console.log('click')} geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']} />
       </group>
     </group>
   )

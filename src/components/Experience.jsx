@@ -5,7 +5,7 @@ import { Overlay } from "./Overlay"
 export const Experience = () => {
     return (
         <>
-            <ambientLight intensity={1} />
+            <ambientLight intensity={0} />
             <OrbitControls enableZoom={false} enableRotate={false} />
             <ScrollControls pages={3} damping={0.25}>
                 <Overlay />

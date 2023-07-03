@@ -1,6 +1,7 @@
 import './App.css'
 import { Canvas } from '@react-three/fiber'
 import { Experience } from './components/Experience'
+import { Environment } from '@react-three/drei'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       fov: 64,
       position: [2, 2, -2]
     }}>
+      <Environment preset="warehouse" />
       <Experience />
     </Canvas>
     </div>
